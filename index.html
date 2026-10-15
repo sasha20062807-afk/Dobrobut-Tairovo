@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dobrobut Tairovo — житловий комплекс у Таїрова, Одеса.">
+  <title>Dobrobut Tairovo — твій дім</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Dobrobut Tairovo — на головну"><img src="assets/logo.png" alt="Логотип Dobrobut Tairovo"></a>
+    <button class="menu-toggle" aria-label="Відкрити меню" aria-expanded="false">☰</button>
+    <nav class="navigation" aria-label="Головна навігація">
+      <a class="active" href="#home">Home</a><a href="#details">Детальніше</a><a href="#about">Про дім</a><a href="#apartments">Обрати квартиру</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-brand">DT</div>
+      <h1>Dobrobut Tairovo</h1>
+      <div class="hero-grid">
+        <img src="assets/exterior.png" alt="Архітектура житлового комплексу з вулиці">
+        <img src="assets/courtyard.png" alt="Внутрішній двір комплексу">
+      </div>
+      <div class="hero-actions"><a class="pill" href="#details">Дізнатися більше <span>↗</span></a><a class="pill" href="#contact">Отримати консультацію <span>↗</span></a></div>
+    </section>
+
+    <section class="intro section" id="details">
+      <div><p class="eyebrow">Житловий комплекс · Одеса</p><h2>Не нерухомість,<br>а твій дім</h2><p class="lead">Продуманий простір, комфорт для щоденного життя та затишок у самому серці Таїрова. Твій дім починається тут.</p></div>
+      <img class="intro-image" src="assets/night-building.png" alt="Нічний вигляд житлового комплексу">
+    </section>
+
+    <section class="section why" id="about">
+      <div class="section-heading"><p class="eyebrow">Dobrobut Tairovo</p><h2>Чому ми?</h2></div>
+      <div class="feature-grid">
+        <article><img class="feature-image" src="assets/courtyard.png" alt="Затишний двір комплексу"><span class="number">01</span><h3>Якість, перевірена часом</h3><p>Професійний підхід архітекторів, високі стандарти інженерії та сучасні технології створюють простір, де надійність залишається пріоритетом.</p></article>
+        <article><img class="feature-image" src="assets/park.png" alt="Зелена зона та прогулянкові маршрути"><span class="number">02</span><h3>Природа поруч</h3><p>Зелені зони — важлива складова комфортного життя. Ландшафт і місця для відпочинку створюють затишний простір для щоденних прогулянок.</p></article>
+        <article><img class="feature-image" src="assets/garden.png" alt="Зелений простір біля будинку"><span class="number">03</span><h3>Автономність і безпека</h3><p>Системи автономного живлення допомагають зберігати комфорт і безпеку мешканців за будь-яких умов.</p></article>
+      </div>
+    </section>
+
+    <section class="section apartments" id="apartments">
+      <div class="section-heading"><p class="eyebrow">Планування</p><h2>Квартири</h2><p class="lead">Оберіть простір, який пасує саме вам.</p><a class="pill" href="#contact">Переглянути квартири <span>→</span></a></div>
+      <img src="assets/floor-plan.png" alt="Макет каталогу квартир та планувань">
+    </section>
+
+    <section class="progress section"><div><p class="eyebrow">Будівництво</p><h2>Поточний етап робіт</h2><p>Стежте за ходом будівництва та оновленнями проєкту.</p><a class="pill" href="#contact">Детальніше <span>→</span></a></div><img src="assets/exterior.png" alt="Візуалізація житлового комплексу"></section>
+
+    <section class="contact section" id="contact"><div><p class="eyebrow">Маєте запитання?</p><h2>Отримати консультацію</h2></div><form><label for="email">Електронна пошта</label><input id="email" type="email" placeholder="name@example.com"><label for="phone">Номер телефону</label><input id="phone" type="tel" placeholder="+380"><label for="question">Ваше запитання</label><textarea id="question" rows="3" placeholder="Напишіть повідомлення"></textarea><button class="submit" type="submit">Відправити</button><small>Надсилаючи форму, ви погоджуєтеся на обробку персональних даних.</small></form></section>
+  </main>
+  <footer class="footer"><a class="footer-name" href="#home">Dobrobut<br>Tairovo</a><div><a href="mailto:DobrobutTairovoRK@gmail.com">DobrobutTairovoRK@gmail.com</a><a href="tel:+380353535353">+380 (35) 35 35 353</a><p>Фонтанська дорога 153, 65016<br>Одеса</p></div><p class="disclaimer">Навчальний проєкт. Сайт створений виключно з освітньою метою та не призначений для отримання прибутку.</p></footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navigation');
+    toggle.addEventListener('click', () => { const open = nav.classList.toggle('open'); toggle.setAttribute('aria-expanded', String(open)); });
+  </script>
+</body>
+</html>
+
+
